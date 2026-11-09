@@ -34,6 +34,17 @@ body {
     overflow: hidden;
 }
 
+    .photo {
+    position: absolute;
+    inset: 0;
+    z-index: -3;
+
+    background-image: url("YOUR_PHOTO1.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #171512;
+}
 /* Blurred layer fills the entire screen */
 .photo::before {
     content: "";
