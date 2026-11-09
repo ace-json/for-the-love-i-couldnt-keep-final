@@ -46,6 +46,21 @@ body {
     background-color: #171512;
 }
 
+/* Blurred layer fills the entire screen */
+.photo::before {
+    content: "";
+    position: absolute;
+    inset: -30px;
+    z-index: -1;
+
+    background-image: url("YOUR_PHOTO1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: blur(25px) brightness(0.4);
+}
+
 .overlay {
     position: absolute;
     inset: 0;
